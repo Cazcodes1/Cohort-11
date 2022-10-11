@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleslog.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <style>
-      li {
-        list-style: none;
+      body {
+        background-image: url("images/background-index.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
       }
     </style>
     <title>Nasty Troll Game</title>
@@ -15,8 +18,16 @@
   <body>
     <container>
       <h1>The Proper Nasty Troll Game</h1>
-      <h2>Nasty or Nice, you decide!</h2>
-      <h2>Login to continue:</h2>
+      <br /><br />
+      <h2>
+        You are a proper nasty troll. Will you be forever angry or could a
+        simple twist of fate change your life forever?
+      </h2>
+      <br /><br />
+      <h2>You decide!</h2>
+      <br /><br />
+      <h3>Login to continue:</h3>
+      <br /><br />
       <header>
         <form action="game.html">
           <label for="name">Username:</label><br />
@@ -25,7 +36,7 @@
           <input name="email" type="email" /><br />
           <label for="password">Choose a password:</label><br />
           <input type="password" name="password" required /><br /><br />
-          <input type="submit" value="Enter Game" />
+          <input type="submit" value="Enter Game" class="enter" />
         </form>
       </header>
     </container>

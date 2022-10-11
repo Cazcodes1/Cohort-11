@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;500;600&family=Patua+One&family=Paytone+One&family=Poppins:wght@300;500;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+body {
+  background-color: #6bd7df;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: #afeeff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h1 {
+  font-family: "Patua One", sans-serif;
+  padding-top: 40px;
+  margin: 40px 0 40px 0;
+  color: #019aa3;
+  text-shadow: 1px 1px #795548;
+  font-size: 40px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+figcaption {
+  font-size: 15px;
+  font-style: italic;
+}
+
+li {
+  list-style: none;
+  font-weight: bold;
+}
+p {
+  margin: 34px 51px 29px 50px;
+  padding: 24px 60px 20px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #04757d;
+}
+
+input {
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  border: 2px grey;
+  color: #04757d;
+}
+
+button {
+  width: 100px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(0, 129, 138);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 30px;
+}
+button a {
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffff;
+}
+button.start-button {
+  margin-top: -10px;
+}
