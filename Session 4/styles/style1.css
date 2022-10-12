@@ -26,8 +26,8 @@ h1 {
   font-family: "Patua One", sans-serif;
   padding-top: 40px;
   margin: 40px 0 40px 0;
-  color: #019aa3;
-  text-shadow: 1px 1px #795548;
+  color: #ff4a4a;
+  text-shadow: 1px 1px #fff;
   font-size: 40px;
 }
 
@@ -53,14 +53,24 @@ p {
   color: #04757d;
 }
 
+label {
+  font-size: 20px;
+}
+
 input {
   font-size: 15px;
+  background: #ff4a4a;
   font-weight: bolder;
   padding: 15px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.66) 0px 5px 15px;
   border-radius: 5px;
   border: 2px grey;
-  color: #04757d;
+  color: #fff;
+}
+input.dance {
+  background: #fff;
+  box-shadow: none;
+  width: 350px;
 }
 
 button {
