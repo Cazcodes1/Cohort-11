@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+}
+body {
+  background-color: black;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/banner.jpg);
+  background-size: cover;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+li {
+  display: flex;
+  list-style: none;
+  display: inline;
+  font-size: 20px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 90px;
+  text-align: center;
+}
+
+img {
+  display: flex;
+  height: 380px;
+  width: 590px;
+}
+
+h2.title {
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  display: flex;
+  align-items: flex-start;
+  margin: -40px 80px 0px 80px;
+  padding: 60px;
+}
+
+div {
+  padding: 80px;
+}
+
+p {
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+}
+h2.testimonial-title {
+  margin-bottom: 90px;
+}
+
+h3.testimonial {
+  margin-bottom: 60px;
+}
