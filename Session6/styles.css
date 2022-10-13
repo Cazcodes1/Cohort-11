@@ -4,11 +4,10 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  scroll-behavior: smooth;
   color: white;
 }
+
 body {
   background-color: black;
 }
@@ -21,6 +20,8 @@ body {
   justify-content: center;
   align-items: center;
   background: url(images/banner.jpg);
+  background-position: center;
+  background-repeat: none;
   background-size: cover;
 }
 
@@ -28,12 +29,14 @@ ul {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  overflow: auto;
 }
+
 li {
   display: flex;
   list-style: none;
   display: inline;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 li a {
@@ -41,49 +44,67 @@ li a {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 100px;
   text-align: center;
 }
-
-img {
-  display: flex;
-  height: 380px;
-  width: 590px;
-}
-
-h2.title {
-  text-align: center;
-  margin: 20px 0px 20px 0px;
-}
-
 h2 {
   text-align: center;
 }
-
-.section-one,
-.section-two,
-.section-three {
-  display: flex;
-  align-items: flex-start;
-  margin: -40px 80px 0px 80px;
-  padding: 60px;
+.container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-div {
-  padding: 80px;
+.container h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
+.left {
+  float: left;
+  width: 45%;
+  padding-left: 15px;
+}
+
+.right {
+  float: right;
+  width: 45%;
+  padding-left: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  clear: both;
+}
+
+section h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+section p {
+  padding: 5px;
+}
+
+h3,
 p {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 footer {
   text-align: center;
 }
 h2.testimonial-title {
-  margin-bottom: 90px;
+  font-size: 30px;
+  padding-top: 80px;
+  margin-bottom: 30px;
 }
 
-h3.testimonial {
-  margin-bottom: 60px;
+.testimonial {
+  padding: 25px;
 }
