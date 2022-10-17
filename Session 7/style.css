@@ -44,6 +44,13 @@ h2 {
   font-size: 50px;
 }
 
+img.wave {
+  display: flex;
+  margin: 0 auto;
+  margin-top: -80px;
+  margin-bottom: -80px;
+}
+
 p {
   font-size: 30px;
   margin-bottom: 40px;
@@ -64,8 +71,27 @@ p {
 .btn {
   font-size: 25px;
   margin-top: 40px;
-  background: rgb(255, 164, 104);
+  background: #e37068;
   border: none;
-  color: black;
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h3.order-confirmation {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  color: rgb(63, 85, 104);
+}
+
+h2.address,
+.email,
+.tel {
+  color: rgb(49, 68, 85);
+  margin-top: 20px;
+  font-size: 45px;
+  font-family: "Exo 2", sans-serif;
+}
+section.contact {
+  padding-bottom: 20px;
 }
