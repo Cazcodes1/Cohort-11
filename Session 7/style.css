@@ -8,6 +8,8 @@ body {
   background: rgb(241, 222, 222);
 }
 
+/* Navbar styling */
+
 .navbar-expand-lg {
   padding: 20px;
 }
@@ -24,6 +26,8 @@ a.nav-link {
 .container-fluid {
   padding-bottom: 80px;
 }
+
+/* Start of titles section */
 
 h1 {
   font-size: 80px;
@@ -44,6 +48,8 @@ h2 {
   font-size: 50px;
 }
 
+/* Image of a wave pattern added after heading */
+
 img.wave {
   display: flex;
   margin: 0 auto;
@@ -57,6 +63,8 @@ p {
   text-align: center;
   color: rgb(63, 85, 104);
 }
+
+/* Forms section */
 
 .form-select,
 #contact-form {
@@ -83,6 +91,8 @@ h3.order-confirmation {
   font-family: "Exo 2", sans-serif;
   color: rgb(63, 85, 104);
 }
+
+/* Contact information section */
 
 h2.address,
 .email,
