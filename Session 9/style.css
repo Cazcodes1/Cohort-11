@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-main {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-image: url("images/background.png");
+}
+
+.nav-item {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.cart {
+  position: relative;
+  float: right;
+  margin-top: -100px;
+  margin-right: 20px;
+}
+
+button {
+  background: linear-gradient(
+    106.7deg,
+    rgb(151, 150, 240) 12.1%,
+    rgb(255, 206, 236) 63.2%
+  );
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section.content {
+  margin-left: 15%;
+  margin-top: 10%;
+}
+.content h1 {
+  color: #232d60;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: #9ec1fc;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.left-right-icons {
+  display: flex;
+  margin-left: 20%;
+  justify-content: flex-start;
+}
+
+.left-right-icons img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+img.fashion-image {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+}
+
+section.social-media-icons {
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  left: 30px;
+  bottom: 260px;
+  width: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+a.media-icon {
+  padding: 10px;
+  text-decoration: none !important;
+  border: 0px !important;
+  outline: none;
+  border-width: 0px;
+  outline-width: 0px;
+  border-bottom: none;
+}
