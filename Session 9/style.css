@@ -4,6 +4,8 @@
   font-family: sans-serif;
 }
 
+/* This contains all info on the webpage */
+
 .container-main {
   height: 100vh;
   width: 100%;
@@ -14,6 +16,7 @@
   background-image: url("images/background.png");
 }
 
+/* Navigation styling  */
 .nav-item {
   padding: 30px;
   font-size: 20px;
@@ -25,6 +28,7 @@
   margin-left: 500px;
 }
 
+/* Main section styling */
 button {
   background: linear-gradient(
     106.7deg,
@@ -67,12 +71,16 @@ section.content {
   margin-right: 20px;
 }
 
+/* Picture of female - large image on page */
+
 img.fashion-image {
   height: 90%;
   position: absolute;
   bottom: 0;
   right: 70px;
 }
+
+/* Social media icons start  */
 
 section.social-media-icons {
   display: flex;
