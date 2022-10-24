@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Converter</title>
+</head>
+<body>
+   
+  <form id="bmi-form" onsubmit="calcBMI();">
+
+<h1>BMI Converter</h1>
+
+<h2>Please state age:    <input type="number" name="age" id="age" min="1" max="100"></input></h2>
+
+<label for="gender">Please select gender:</label>
+<select name="gender" id="gender">
+    <option value="male">Male</option> 
+    <option value="female">Female</option> 
+</select>
+
+
+<label for="weight">Please state weight: <span class="units">kgs</span></label>   
+<input id="weight" type="number" name="weight"  min="1" max="635" required> </input>  
+<label for="weight">Please state height: <span class="units">m</span></label>   
+<input  id="height" type="number" name="height" min="54" max="300" required></input>  
+<input type="submit" value="Calculate BMI"></input> 
+    
+   </form>
+
+    <span id="result">""</span>
+  
+ 
+
+<script src="script.js"></script>
+</body>
+</html>
