@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  top: 0;
+}
+
+body {
+  background-color: rgb(108, 110, 189);
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+
+div.converter-container {
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.wrapper {
+  margin-top: 60px;
+  width: 500px;
+  background-color: rgb(176, 176, 237);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+h1 {
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+#height,
+#weight {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 150px;
+  font-size: 18px;
+}
+
+button#calculate {
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  background: aliceblue;
+  color: rgb(67, 71, 180);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button#calculate:hover {
+  transition: 0.3s ease-in-out;
+  color: aliceblue;
+  background: rgb(67, 71, 180);
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: rgb(255, 109, 19);
+}
+
+#result-statement {
+  margin-top: 20px;
+  color: rgb(252, 251, 251);
+}
