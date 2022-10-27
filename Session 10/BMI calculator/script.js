@@ -1,24 +1,40 @@
-let heightInput = document.getElementById("height");
-let weightInput = document.getElementById("weight");
-let calculateButton = document.getElementById("calculate");
-let result = document.getElementById("result");
-let statement = document.getElementById("result-statement");
-var BMI, height, weight;
+const btn = document.getElementById("calculate");
 
-function calcBMI() {
-  height = heightInput.value;
-  weight = weightInput.value;
-  BMI = weight / height ** 2;
-  result.innerText = BMI;
+btn.addEventListener("click", function () {
+  let height = document.querySelector("#height").value;
+  let weight = document.querySelector("#weight").value;
 
-  if (BMI < 18.5) {
-    statement.innerText = "Your BMI falls within the underweight range";
-  } else if (BMI > 18.5 && BMI < 24.9) {
-    statement.innerText =
-      "Your BMI falls within the normal or healthy weight range";
-  } else if (BMI > 25 && BMI < 29.9) {
-    statement.innerText = "Your BMI falls within the overweight range";
-  } else {
-    statement.innerText = "Your BMI falls within the obese range";
+  if (height == "" || weight == "") {
+    alert("Please fill out the input fields!");
+    return;
   }
-}
+
+  // BMI = weight in KG / (height in m * height in m)
+
+  height = height / 100;
+
+  let BMI = weight / (height * height);
+
+  BMI = BMI.toFixed(1);
+
+  document.querySelector(".result").innerHTML = BMI;
+  console.log("#result");
+
+  let status = "";
+
+  if ((BMI, 18.5)) {
+    status = "Underweight";
+  }
+  if (BMI >= 18.5 && BMI < 25) {
+    status = "Healthy";
+  }
+  if (BMI >= 25 && BMI < 30) {
+    status = "Overweight";
+  }
+  if (BMI >= 30) {
+    status = "Obese";
+  }
+  document.querySelector(
+    ".comment"
+  ).innerHTML = `Your are <span id="comment">${status}</span>`;
+});

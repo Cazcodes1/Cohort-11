@@ -4,23 +4,23 @@
 }
 
 body {
-  background-color: rgb(108, 110, 189);
+  background-color: rgb(129, 177, 231);
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
 }
 
 div.converter-container {
-  padding: 50px;
+  padding: 80px;
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
 }
 
-div.wrapper {
+div.box {
   margin-top: 60px;
   width: 500px;
-  background-color: rgb(176, 176, 237);
+  background-color: rgb(55, 86, 138);
   padding: 50px;
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
@@ -44,34 +44,51 @@ p {
 
 input {
   width: 150px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 button#calculate {
   margin-top: 20px;
   border: none;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   font-size: 18px;
-  background: aliceblue;
-  color: rgb(67, 71, 180);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: rgb(250, 24, 84);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 button#calculate:hover {
   transition: 0.3s ease-in-out;
   color: aliceblue;
-  background: rgb(67, 71, 180);
+  background: rgb(211, 7, 62);
   font-size: 20px;
+  cursor: pointer;
 }
 
-h3 {
+label {
+  display: flex;
+  margin-bottom: 10px;
   margin-top: 20px;
-  font-size: 25px;
-  color: rgb(255, 109, 19);
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  flex-direction: column-reverse;
 }
 
-#result-statement {
+.result {
   margin-top: 20px;
-  color: rgb(252, 251, 251);
+  color: rgb(255, 60, 112);
+  font-size: 30px;
+}
+
+.comment {
+  font-size: 20px;
+  margin-top: 10px;
+  color: rgb(255, 140, 167);
 }
