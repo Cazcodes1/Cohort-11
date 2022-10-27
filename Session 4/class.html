@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style1.css" />
+    <script src="script.js" defer></script>
     <style>
       li {
         list-style: none;
@@ -31,7 +32,7 @@
             Much to your total disgust, you got the class times wrong and miss
             the Anger Management Class. Instead a cringetastic dance class is
             about to start!!!
-            <br />Do you??
+          
           </p>
         </section>
 
@@ -39,12 +40,23 @@
   <!--This code has been added to give the user choice using submit input -->
 
         <section>
-          <form action="danceon.html">
-            <input type="submit" value="Stay and dance" />
-          </form>
-          <br /><br />
+        <div class="conversation" id="talk">
+        <label for="conversation">Hi angry troll, Would you like to join?<br/></label>
+    
+        <button id="btn-yes" onclick="communicateYes()">yes</button>   <button id="btn-no" onclick="communicateNo()">no</button>
+        <br /> <br />
+        <h3 id="answer"></h3><br /> <br />
+
+           <form action="sign_up.html">
+            <input type="submit" id="stay-btn" value="Sign up here" />
+                   </form>
+       <br /><br />
+           <h3 id="answer2"></h3>
+        <div>
+         
+              <br />
           <form action="stay.html">
-            <input type="submit" value="Leave even more angry" />
+            <input type="submit" id="leave-btn" value="Leave even more angry" />
           </form>
         </section>
 
