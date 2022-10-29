@@ -20,6 +20,14 @@
     <container>
         <div class="wrapper">
       <h1>You make it to Strictly ...</h1>
+<section>
+  <button id="music-on" onclick="playMusic()">Start the music</button>
+  <audio id="audio" src="audio/Funky Junk.mp3"></audio>
+  <input id="volume-bar" input="changeVolume()" type="range" min="0" max="10" value="10" step="1" ></input>
+ 
+ </section>
+
+
       <section>
         <figure>
           <img src="images/strictly.png" alt="troll and Arnold Schwarznegger on dance floor" width="500px" />
@@ -36,6 +44,8 @@
         <p>
           Never mind ... The End
        </p>
+
+        <button id="music-off" onclick="stopMusic()">Stop the f*&%!!*g music!!</button>
       </section>
 
      <!--This code has been added to give the user choices to go back to start or log out using buttons -->
