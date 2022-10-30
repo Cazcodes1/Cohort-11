@@ -22,9 +22,6 @@ function communicateNo() {
 
 let btnOn = document.getElementById("click", playMusic());
 let btnOff = document.getElementById("click", pauseMusic());
-let volumeChange = document.getElementById("volume-bar");
-
-let volume = 5;
 
 function playMusic() {
   document.getElementById("audio").play();
@@ -37,11 +34,3 @@ function stopMusic() {
 }
 
 stopMusic();
-
-function changeVolume() {
-  volumeChange.addEventListener("input", (e) => {
-    audio.volume = e.volumeChange.value / 10;
-  });
-}
-
-changeVolume();

@@ -34,6 +34,7 @@ h1 {
 img {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 1;
 }
 
 figcaption {
@@ -109,34 +110,13 @@ button.start-button {
 #music-off {
   color: #fff;
   margin: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   width: 150px;
   background-color: #ff4aa1;
+  margin-top: 20px;
 }
 
 #music-off {
   margin-bottom: 30px;
   margin-top: 10px;
-}
-
-#volume-bar {
-  display: block;
-  margin: 0 auto;
-  box-shadow: none;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding: 5px;
-  border-radius: 8px;
-  height: 4px;
-  width: 150px;
-  outline: none;
-  -webkit-appearance: none;
-  background: #0e8aac95;
-}
-input[type="range"]::-webkit-slider-thumb {
-  width: 6px;
-  -webkit-appearance: none;
-  height: 20px;
-  background: black;
-  border-radius: 2px;
 }
