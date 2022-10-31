@@ -31,7 +31,7 @@
         <!--This is a sign up form-->
 
         <section>
-          <form action="">
+          <form id="dance-form" action="" onsubmit="communicateThanks(event)">
             <label for="name”">Troll Name:</label><br />
             <input class="dance" name="”name”" type="”text”" /><br />
             <label for="”email”">Email:</label><br />
@@ -39,13 +39,10 @@
             <label for="”name”">Favourite Dance Style:</label><br />
             <input class="dance" name="”name”" type="”text”" /><br />
             <label for="”password”">Choose a password:</label><br />
-            <input
-              class="dance"
-              type="”password”"
-              name="password"
-            /><br /><br />
-            <input type="submit" value="Submit Form" />
+            <input class="dance" type="password" name="password" /><br /><br />
+            <input type="submit" id="submit-form" value="Submit Form" />
           </form>
+          <p id="log"></p>
         </section>
 
         <!--This code has been added to give the user choices using buttons -->

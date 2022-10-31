@@ -22,6 +22,19 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+#controls {
+  display: none;
+}
+button.grumble {
+  margin-top: -27px;
+  color: #fff;
+  background: #1eb961;
+  margin-right: 10px;
+}
+.greet {
+  margin-top: -30px;
+}
+
 h1 {
   font-family: "Shadows Into Light", sans-serif;
   padding-top: 40px;
@@ -67,6 +80,10 @@ input {
   border-radius: 5px;
   border: 2px grey;
   color: #fff;
+}
+
+input.dance {
+  color: rgba(0, 0, 0, 0.66);
 }
 
 button#btn-yes,

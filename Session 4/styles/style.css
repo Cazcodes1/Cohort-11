@@ -22,15 +22,24 @@ h2,
 h3 {
   color: #16616c;
 }
-
+h2.intro {
+  margin-bottom: -70px;
+}
 h2 {
   margin: 20px 70px 20px 70px;
   font-size: 35px;
+}
+h2.decide {
+  margin-top: 1px;
 }
 h3 {
   font-family: "Shadows Into Light", sans-serif;
   font-size: 40px;
   letter-spacing: 2px;
+}
+
+h3.login {
+  margin-top: 20px;
 }
 form {
   margin-top: -29px;

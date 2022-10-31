@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/game.css" />
     <script src="script.js" defer></script>
     <style>
       body {
-        background: url(images/background-index1.PNG) no-repeat center center
-          fixed;
+        background-color: #70ccd8;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -27,15 +27,20 @@
 
     <container>
       <h1>The Proper Nasty Troll Game</h1>
-      <br /><br />
-      <h2>
+
+      <h2 class="intro">
         You are a proper nasty troll. <br />Will you be angry for all eternity
         or will a simple twist of fate change your life forever?
       </h2>
+      <div id="game">
+        <div id="character" onclick="jump()"></div>
+        <div id="block"></div>
+      </div>
       <br />
-      <h2>You decide!</h2>
+      <h2 class="decide">You decide!</h2>
+
       <br /><br />
-      <h3>Login to continue:</h3>
+      <h3 class="login">Login to continue:</h3>
       <br /><br />
       <header>
         <form action="game.html">

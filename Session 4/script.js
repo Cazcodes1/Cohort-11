@@ -1,8 +1,11 @@
 let btnYes = document.getElementById("btn-yes");
 let btnNo = document.getElementById("btn-no");
+let form = document.getElementById("dance-form");
+let log = document.getElementById("log");
 
 btnYes.addEventListener("onclick", communicateYes);
 btnNo.addEventListener("onclick", communicateNo);
+form.addEventListener("submit", communicateThanks);
 
 function communicateYes() {
   document.getElementById("answer").innerText = "Amazing, let's get started!!";
@@ -34,3 +37,53 @@ function stopMusic() {
 }
 
 stopMusic();
+
+let trollTalk = document.getElementById("click", play());
+let trollStop = document.getElementById("click", pause());
+
+function play() {
+  document.getElementById("grumble").play();
+}
+
+function pause() {
+  document.getElementById("grumble").pause();
+}
+play();
+pause();
+
+console.log(play);
+
+function communicateThanks(event) {
+  log.textContent = `Thanks for completing, now Cheer Up!!: Your id confirmation no: ${event.timeStamp}`;
+  event.preventDefault();
+}
+
+const char = document.getElementById("character");
+document.addEventListener("click", jump());
+
+function jump() {
+  if (character.classList == "animate") {
+    return;
+  }
+  character.classList.add("animate");
+  console.log(jump);
+  setTimeout(removeJump, 300);
+}
+function removeJump() {
+  character.classList.remove("animate");
+}
+
+const block = document.getElementById("block");
+function checkDead() {
+  let characterTop = parseInt(
+    window.getComputedStyle(character).getPropertyValue("top")
+  );
+  let blockLeft = parseInt(
+    window.getComputedStyle(block).getPropertyValue("left")
+  );
+  if (blockLeft < 20 && blockLeft > -20 && characterTop >= 130) {
+    alert("Game over");
+  }
+}
+
+setInterval(checkDead, 10);
