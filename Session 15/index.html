@@ -2,26 +2,28 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <!-- Google Font -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- Stylesheet -->
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="calculator">
+      <!-- Display is an input element -->
       <div class="display">
         <input type="text" placeholder="0" id="input" />
       </div>
       <div class="buttons" id="buttons">
+        <!-- Function buttons added -->
         <input type="button" value="*" class="input-button" id="input1" />
         <input type="button" value="/" class="input-button" id="input2" />
         <input type="button" value="-" class="input-button" id="input3" />
         <input type="button" value="+" class="input-button" id="input4" />
-
+        <!-- Number buttons added -->
         <input type="button" value="." class="input-button" />
         <input type="button" value="9" class="input-button" />
         <input type="button" value="8" class="input-button" />
@@ -35,7 +37,7 @@
         <input type="button" value="2" class="input-button" />
         <input type="button" value="1" class="input-button" />
         <input type="button" value="0" class="input-button" />
-
+        <!-- Equals and clear buttons added -->
         <input type="button" value="=" id="equal" />
         <input type="button" value="C" id="clear" />
       </div>
