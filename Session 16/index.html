@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <p id="error"></p>
+    <p>Who's move: <span id="move">X</span></p>
+    <div class="background">
+      <table>
+        <tr id="0">
+          <td id="0,0"></td>
+          <td id="0,1"></td>
+          <td id="0,2"></td>
+        </tr>
+        <tr id="1">
+          <td id="1,0"></td>
+          <td id="1,1"></td>
+          <td id="1,2"></td>
+        </tr>
+        <tr id="2">
+          <td id="2,0"></td>
+          <td id="2,1"></td>
+          <td id="2,2"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <label for="co-ord1">Enter X-axis</label>
+      <input type="text" name="co-ord1" id="co-ord1" /> <br />
+      <label for="co-ord2">Enter Y label</label>
+      <input type="text" name="co-ord2" id="co-ord2" /> <br />
+      <button onclick="makeMove()">Enter!</button>
+    </div>
+  </body>
+</html>
