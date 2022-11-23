@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="data/script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container mx-auto">
+      <h1>Shopping list</h1>
+      <form id="filter-form">
+        <!-- <label for="filter_bar"></label> -->
+        <input
+          type="text"
+          name="filter_bar"
+          id="filter_bar"
+          placeholder="Filter the list"
+          class="border"
+        />
+        <button type="submit" class="bg-green-400">Filter</button>
+      </form>
+      <table id="shopping-list-table" class="mt-10">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Category</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script>
+      const entryPoint = document.querySelector(
+        "table#shopping-list-table tbody"
+      );
+      const form = document.getElementById("filter-form");
+      form.addEventListener("submit", filter);
+      form.addEventListener("submit", filterPrice);
+
+      function filter(e) {
+        e.preventDefault();
+        const searchedCategory = document
+          .getElementById("filter_bar")
+          .value.toLowerCase();
+
+        const filteredItems = shoppingItems.filter((item, i) => {
+          return item.category.toLowerCase() === searchedCategory;
+        });
+
+        console.log(filteredItems);
+
+        const tbody = document.createElement("tbody");
+        entryPoint.innerHTML = "";
+
+        // adding the filtered items to the html
+        for (let i = 0; i < filteredItems.length; i++) {
+          const newRow = `
+                <tr>
+                    <td class="p-4">${filteredItems[i].item_name}</td>
+                    <td class="p-4">${filteredItems[i].price}</td>
+                    <td class="p-4">${filteredItems[i].category}</td>
+                </tr>
+            `;
+          entryPoint.insertAdjacentHTML("beforeend", newRow);
+        }}
+
+        function filterPrice(e) {
+          e.preventDefault();
+          const searchedPrice = document
+            .getElementById("filter_bar")
+            .value.toLowerCase();
+
+          const filteredItemsPrice = shoppingItems.filterPrice((item, i) => {
+            return item.price.toLowerCase() === searchedPrice;
+          });
+
+          console.log(filteredItemsPrice);
+
+          const tbody1 = document.createElement("tbody");
+          entryPoint.innerHTML = "";
+
+          // adding the filtered items to the html
+          for (let i = 0; i < filteredItemsPrice.length; i++) {
+            const newRow = `
+                <tr>
+                    <td class="p-4">${filteredItemsPrice[i].item_name}</td>
+                    <td class="p-4">${filteredItemsPrice[i].price}</td>
+                    <td class="p-4">${filteredItemsPrice[i].category}</td>
+                </tr>
+            `;
+            entryPoint.insertAdjacentHTML("beforeend", newRow);
+          }
+        }
+      }
+
+      for (let i = 0; i < shoppingItems.length; i++) {
+        console.log(shoppingItems[i]);
+        const newRow = `
+                <tr>
+                    <td class="p-4">${shoppingItems[i].item_name}</td>
+                    <td class="p-4">${shoppingItems[i].price}</td>
+                    <td class="p-4">${shoppingItems[i].category}</td>
+                </tr>
+            `;
+        entryPoint.insertAdjacentHTML("beforeend", newRow);
+      }
+    </script>
+  </body>
+</html>
