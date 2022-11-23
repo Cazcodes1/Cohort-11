@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping list</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="data/script.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="/JS/data.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -59,7 +59,7 @@
         const tbody = document.createElement("tbody");
         entryPoint.innerHTML = "";
 
-        // adding the filtered items to the html
+        adding the filtered items to the html
         for (let i = 0; i < filteredItems.length; i++) {
           const newRow = `
                 <tr>
@@ -69,34 +69,34 @@
                 </tr>
             `;
           entryPoint.insertAdjacentHTML("beforeend", newRow);
-        }}
+        }
+      }
 
-        function filterPrice(e) {
-          e.preventDefault();
-          const searchedPrice = document
-            .getElementById("filter_bar")
-            .value.toLowerCase();
+      function filterPrice(e) {
+        e.preventDefault();
+        const searchedPrice = document
+          .getElementById("filter_bar")
+          .value.toLowerCase();
 
-          const filteredItemsPrice = shoppingItems.filterPrice((item, i) => {
-            return item.price.toLowerCase() === searchedPrice;
-          });
+        const filteredItemsPrice = shoppingItems.filterPrice((item, i) => {
+          return item.price === searchedPrice;
+        });
 
-          console.log(filteredItemsPrice);
+        console.log(filteredItemsPrice);
 
-          const tbody1 = document.createElement("tbody");
-          entryPoint.innerHTML = "";
+        const tbody1 = document.createElement("tbody");
+        entryPoint.innerHTML = "";
 
-          // adding the filtered items to the html
-          for (let i = 0; i < filteredItemsPrice.length; i++) {
-            const newRow = `
+        // adding the filtered items to the html
+        for (let i = 0; i < filteredItemsPrice.length; i++) {
+          const newRow = `
                 <tr>
                     <td class="p-4">${filteredItemsPrice[i].item_name}</td>
                     <td class="p-4">${filteredItemsPrice[i].price}</td>
                     <td class="p-4">${filteredItemsPrice[i].category}</td>
                 </tr>
             `;
-            entryPoint.insertAdjacentHTML("beforeend", newRow);
-          }
+          entryPoint.insertAdjacentHTML("beforeend", newRow);
         }
       }
 
