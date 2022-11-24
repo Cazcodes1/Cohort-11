@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap");
+
+body {
+  height: 100vh;
+  padding: 0;
+  background: rgb(6, 44, 46);
+  font-family: "Manrope", sans-serif;
+}
+
+div.container {
+  box-sizing: border-box;
+  display: flex;
+}
+
+#box {
+  width: 444px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  margin: 100px auto;
+  padding: 150px 100px 140px 100px;
+  border-radius: 10px;
+  background-color: rgba(19, 84, 95, 0.365);
+  border-style: none;
+  position: relative;
+  box-shadow: rgba(5, 5, 6, 0.2) 0px 7px 29px 0px;
+}
+
+#btn {
+  align-self: flex-start;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 200px;
+  top: 50%;
+  border-radius: 50%;
+  border-style: none;
+  background: hsl(150, 100%, 66%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#btn:hover {
+  box-shadow: 0 0 30px 0 rgb(21, 255, 232), 0 0 30px 0 rgb(21, 255, 232),
+    0 0 10px 0 rgb(21, 255, 232) inset;
+}
+h1.advice-id {
+  font-size: 18px;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin-top: 20px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  font-size: 23px;
+}
+
+#graphic {
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
+#dice {
+  align-items: center;
+}
+
+.attribution {
+  margin-top: 200px;
+  font-size: 11px;
+  text-align: center;
+  color: rgb(56, 114, 114);
+}
+.attribution a {
+  color: hsl(186, 93%, 76%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #box {
+    width: 200px;
+    display: flex;
+    padding: 80px 80px 80px 80px;
+    border-radius: 10px;
+  }
+  h1.advice-id {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+#graphic {
+  width: 200px;
+  margin: 0 auto;
+}
