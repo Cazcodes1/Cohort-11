@@ -13,8 +13,9 @@
     <ul id="movies-list"></ul>
 
     <script>
-      document.getElementById("movies-list").innerHTML =
-        +`<li>Loading ...</li>`;
+      document.getElementById(
+        "movies-list"
+      ).innerHTML += `<li>Loading ...</li>`;
 
       fetch("https://showtimes.everyday.in.th/api/v2/movie/")
         .then((response) => response.json())
