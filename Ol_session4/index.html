@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Session 4</title>
+  </head>
+  <body>
+    <h1>Movies</h1>
+    <ul id="movies-list"></ul>
+
+    <script>
+      document.getElementById("movies-list").innerHTML =
+        +`<li>Loading ...</li>`;
+
+      fetch("https://showtimes.everyday.in.th/api/v2/movie/")
+        .then((response) => response.json())
+        .then((data) => {
+          outputHTML(data);
+        });
+
+      function outputHTML(d) {
+        document.getElementById("movies-list").innerHTML = "";
+        const results = d.results.forEach(function (item, index) {
+          const { title, id } = item;
+          document.getElementById(
+            "movies-list"
+          ).innerHTML += `<li>${title}</li>`;
+        });
+      }
+    </script>
+  </body>
+</html>
